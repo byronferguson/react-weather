@@ -1,9 +1,9 @@
 import dayjs from "dayjs";
-import { Weather } from "../classes/Weather";
+import { Weather } from "../classes/Weather.js";
 
 export class WeatherService {
   static #BASE_URL = "https://api.openweathermap.org";
-  static #API_KEY = "166a433c57516f51dfab1f7edaed8413";
+  static #API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   static async forecastByLocation(location) {
     const coords = await this.#fetchCoords(location);

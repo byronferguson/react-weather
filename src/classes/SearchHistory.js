@@ -1,4 +1,4 @@
-import { History } from "./history";
+import { History } from "./history.js";
 
 export class SearchHistory extends History {
   #KEY;

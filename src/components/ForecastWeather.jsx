@@ -1,4 +1,4 @@
-import { WeatherCard } from "./WeatherCard";
+import { WeatherCard } from "./WeatherCard.jsx";
 
 export function ForecastWeather({ forecast }) {
   return (

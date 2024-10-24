@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { CurrentWeather } from "./components/CurrentWeather";
-import { ForecastWeather } from "./components/ForecastWeather";
-import { PageHeader } from "./components/PageHeader";
-import { WeatherSearch } from "./components/WeatherSearch";
-import { WeatherSearchHistory } from "./components/WeatherSearchHistory";
-import { useSearchHistory } from "./hooks/search-history";
-import { WeatherService } from "./services/weather.service";
+import { CurrentWeather } from "./components/CurrentWeather.jsx";
+import { ForecastWeather } from "./components/ForecastWeather.jsx";
+import { PageHeader } from "./components/PageHeader.jsx";
+import { WeatherSearch } from "./components/WeatherSearch.jsx";
+import { WeatherSearchHistory } from "./components/WeatherSearchHistory.jsx";
+import { useSearchHistory } from "./hooks/search-history.jsx";
+import { WeatherService } from "./services/weather.service.js";
 
 function App() {
   const [location, setLocation] = useState("shawnee");

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { SearchHistory } from "../classes/SearchHistory";
+import { SearchHistory } from "../classes/SearchHistory.js";
 
 export function useSearchHistory() {
   const [_history] = useState(() => new SearchHistory());

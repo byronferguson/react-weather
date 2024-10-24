@@ -1,4 +1,4 @@
-import { titleCase } from "../utils/string.utils";
+import { titleCase } from "../utils/string.utils.js";
 
 export function PageHeader({ location }) {
   return (
