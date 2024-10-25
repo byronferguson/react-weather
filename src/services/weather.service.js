@@ -30,10 +30,10 @@ export class WeatherService {
     return [
       now,
       forecasts.filter((forecast) => {
-        // filters dates that are after today, and only 12pm
+        // filters dates that are after today, and only 3pm
         return (
           forecast.rawDate.isAfter(dayjs(), "day") &&
-          forecast.rawDate.hour() === 12
+          forecast.rawDate.hour() === 15
         );
       }),
     ];

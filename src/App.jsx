@@ -26,8 +26,6 @@ function App() {
     });
   }
 
-  useEffect(() => {}, [location]);
-
   return (
     <>
       <PageHeader location={location} />
